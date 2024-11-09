@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CoalTech </h1>
+    <h2>Carbon Footprint Emission Calculator</h2>
+    
+    <label for="coalType">Select Coal Type:</label>
+    <select id="coalType">
+        <option value="anthracite">Anthracite</option>
+        <option value="bituminous">Bituminous</option>
+        <option value="subBituminous">Sub-bituminous</option>
+        <option value="lignite">Lignite</option>
+    </select>
+    
+    <br/><br/>
+    
+    <label for="coalAmount">Enter Coal Amount (tons):</label>
+    <input type="number" id="coalAmount" placeholder="e.g. 100">
+    
+    <br/><br/>
+    
+    <label for="efficiencyFactor">Enter Efficiency Factor (0 to 1):</label>
+    <input type="number" step="0.01" id="efficiencyFactor" placeholder="e.g. 0.95">
+    
+    <br/><br/>
+    
+    <button onclick="calculate()">Calculate Emissions</button>
+    
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
